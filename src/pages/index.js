@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import heroImage from "../images/hero-image.svg"
+//import heroImage from "../images/hero-image.svg"
+import heroImage from "../images/me-point-reyes-2017.jpg"
 
 export default () => {
   return (
