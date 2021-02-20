@@ -19,13 +19,13 @@ export default () => {
           <img
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
             src={heroImage}
-            alt="Gatsby and Tailwind CSS together"
+            alt="Pt. Reyes National Seashore"
           />
         </div>
 
         <div className="mx-auto">
           <a
-            href="https://github.com/jeffrey-t-l"
+            href="https://github.com/jeffrey-t-l" target="_blank"
             className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400"
           >
             Check Out My GitHub
