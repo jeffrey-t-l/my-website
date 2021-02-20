@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 //import heroImage from "../images/hero-image.svg"
-import heroImage from "../images/me-point-reyes-2017.jpg"
+import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 
 export default () => {
   return (
@@ -27,7 +27,7 @@ export default () => {
           <a
             href="https://github.com/jeffrey-t-l" target="_blank"
             className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400"
-          >
+>
             Check Out My GitHub
           </a>
         </div>
