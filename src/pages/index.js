@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 
+
 export default () => {
   return (
     <Layout>
@@ -19,7 +20,10 @@ export default () => {
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently: 
               </p>
-              <br /><br /><br /><br /><br /><br /><br />
+              <br /><br />
+              {/*Put CLient-side code here*/}
+
+              <br /><br /><br /><br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
@@ -31,6 +35,13 @@ export default () => {
                   <a href="https://www.linkedin.com/in/jeffleibensperger/" target="_blank" rel="noreferrer"
                     className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400">
                     <strong>Stalk Me on LinkedIn</strong>
+                  </a>
+                </span>
+                <br /><br /><br /><br />
+                <span className="sm:px-4">
+                  <a href="mailto:jeffrey.leibensperger@gmail.com" target="_blank" rel="noreferrer"
+                    className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400">
+                    <strong>Send Me an Email!</strong>
                   </a>
                 </span>
               </div>
