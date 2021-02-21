@@ -1,6 +1,37 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
+
+{/* this is broken and you need to fix it
+export const query = graphql`
+query WeatherQuery {
+  allWeatherData {
+    edges {
+      node {
+        currently {
+          time
+          summary
+          temperature
+          windSpeed
+          windBearing
+        }
+        daily {
+          data {
+            time
+            summary
+            temperatureMin
+            temperatureMax
+            windSpeed
+            windBearing
+          }
+        }
+      }
+    }
+  }
+}
+`;
+*/}
 
 export default () => {
   return (
