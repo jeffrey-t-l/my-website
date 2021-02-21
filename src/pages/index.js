@@ -18,6 +18,7 @@ export default () => {
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 Some placeholder text here. Yada yada. Will update later.
               </p>
+              <span>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {<StaticQuery
     query={graphql`
@@ -35,7 +36,7 @@ export default () => {
     `}
     render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
   ></StaticQuery>} degrees Farenheit.
-                  </p>
+                  </p></span>
               <br /><br /><br /><br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">

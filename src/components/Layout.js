@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "./SEO"
+import { Link } from "gatsby"
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <div className="flex flex-col min-h-screen bg-gray-200">
         <header className="p-4 bg-teal-500 text-white font-semibold">
           {/*<h1 className="max-w-4xl mx-auto">Jeff Leibensperger</h1>*/}
+          <h2><Link to="/">Go Home</Link><span> | </span><Link to="/aboutme">About Me</Link></h2>
         </header>
         {children}
         <footer className="p-1 bg-teal-500 text-white">
