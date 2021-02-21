@@ -11,8 +11,7 @@ const Layout = ({ children }) => {
         </header>
         {children}
         <footer className="py-2 text-center text-gray-600 text-xs">
-          <div><a href="https://github.com/melanienolan/gatsby-starter-tailwind-css">Website Template Credit, Click Here</a></div>
-          <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+          <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css">Melanie Nolan</a> | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a></div>
         </footer>
       </div>
     </>
