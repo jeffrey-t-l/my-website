@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
+import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 
-{/* this is broken and you need to fix it
+/*}
 export const query = graphql`
 query WeatherQuery {
   allWeatherData {
@@ -30,8 +31,8 @@ query WeatherQuery {
     }
   }
 }
-`;
-*/}
+`
+*/
 
 export default () => {
   return (
@@ -41,7 +42,7 @@ export default () => {
           <div className="sm:px-2">
             <div>
               <h1 className="px-4 pt-5 text-2xl text-left text-black-500 font-bold sm:text-3xl">
-                Hi There! <span role="img">👋</span>
+                Hi There! <Emoji symbol="👋" label="wave"/>
               </h1>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 Some placeholder text here. Yada yada. Will update later.
