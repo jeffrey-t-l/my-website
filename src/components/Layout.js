@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         </header>
         {children}
         <footer className="p-1 bg-teal-500 text-white">
-          <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css">Melanie Nolan</a> | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a></div>
+          <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css">Melanie Nolan</a> | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> | Weather data from <a href="https://darksky.net" title="Darsky">Darksky</a></div>
         </footer>
         {/*}
         <footer className="py-2 text-center text-gray-600 text-xs">
