@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
+import { StaticQuery, graphql } from "gatsby"
 
 
 export default () => {
@@ -18,11 +19,23 @@ export default () => {
                 Some placeholder text here. Yada yada. Will update later.
               </p>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-                The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently: 
-              </p>
-              <br /><br />
-              {/*Put CLient-side code here*/}
-
+                The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {<StaticQuery
+    query={graphql`
+      {
+        weatherData {
+          id
+          latitude
+          longitude
+          currently {
+            temperature
+            summary
+          }
+        }
+      }
+    `}
+    render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
+  ></StaticQuery>} degrees Farenheit.
+                  </p>
               <br /><br /><br /><br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
