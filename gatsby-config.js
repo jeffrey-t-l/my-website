@@ -3,8 +3,6 @@ const tailwindConfig = require("./tailwind.config.js")
 
 const { theme } = resolveConfig(tailwindConfig)
 
-//add this to gitignore
-
 module.exports = {
   siteMetadata: {
     title: "@jeffl",
