@@ -7,16 +7,16 @@ const Darksky = () => (
       {
         weatherData {
           id
-          latitude
-          longitude
           currently {
-            temperature
             summary
+            temperature
+            humidity
+            precipProbability
           }
         }
       }
     `}
-    render={data => <pre>{JSON.stringify(data.weatherData, null, 4)}</pre>}
+    render={data => <pre>{JSON.stringify(data, null, 4)}</pre>}
   ></StaticQuery>
 )
 

@@ -5,7 +5,7 @@ import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 import { StaticQuery, graphql } from "gatsby"
 import Darksky from "../components/Darksky"
 
-var DarkskyWeather = Darksky()
+const DarkskyWeather = Darksky()
 
 export default () => {
   return (
@@ -22,7 +22,7 @@ export default () => {
               </p>
               <span>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-                The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {<StaticQuery
+                The current temperature in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {<StaticQuery
     query={graphql`
       {
         weatherData {
@@ -36,13 +36,19 @@ export default () => {
         }
       }
     `}render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
-  ></StaticQuery>} degrees Farenheit.</p></span>
+  ></StaticQuery>}&deg; F.</p></span>
               <br />
-              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{DarkskyWeather.currently}</p>
+                <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{}</p>
               <br /><br />
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Raw Data:
                   {DarkskyWeather}
+                </code>
+              </div>
+              <br /><br />
+              <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
+                <code className="text-gray-600 text-xs leading-xl">Testing Raw Data:
+                  <pre>{DarkskyWeather}</pre>
                 </code>
               </div>
               <br /><br />
