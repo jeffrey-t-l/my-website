@@ -1,38 +1,7 @@
 import React from "react"
-import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
-
-/*}
-export const query = graphql`
-query WeatherQuery {
-  allWeatherData {
-    edges {
-      node {
-        currently {
-          time
-          summary
-          temperature
-          windSpeed
-          windBearing
-        }
-        daily {
-          data {
-            time
-            summary
-            temperatureMin
-            temperatureMax
-            windSpeed
-            windBearing
-          }
-        }
-      }
-    }
-  }
-}
-`
-*/
 
 export default () => {
   return (
@@ -48,20 +17,20 @@ export default () => {
                 Some placeholder text here. Yada yada. Will update later.
               </p>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-                The weather in Astoria, NY is currently: 
+                The weather in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently: 
               </p>
               <br /><br /><br /><br /><br /><br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
                     className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400">
-                    Check Out My GitHub
+                    <strong>Check Out My GitHub</strong>
                     </a>
                 </span>
                 <span className="sm:px-6">
                   <a href="https://www.linkedin.com/in/jeffleibensperger/" target="_blank" rel="noreferrer"
                     className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400">
-                    Stalk Me on LinkedIn
+                    <strong>Stalk Me on LinkedIn</strong>
                   </a>
                 </span>
               </div>
