@@ -3,7 +3,9 @@ import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 import { StaticQuery, graphql } from "gatsby"
+import Darksky from "../components/Darksky"
 
+var DarkskyWeather = Darksky()
 
 export default () => {
   return (
@@ -33,11 +35,17 @@ export default () => {
           }
         }
       }
-    `}
-    render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
-  ></StaticQuery>} degrees Farenheit.
-                  </p></span>
-              <br /><br /><br /><br /><br />
+    `}render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
+  ></StaticQuery>} degrees Farenheit.</p></span>
+              <br />
+              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{DarkskyWeather.currently}</p>
+              <br /><br />
+              <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
+                <code className="text-gray-600 text-xs leading-xl">Raw Data:
+                  {DarkskyWeather}
+                </code>
+              </div>
+              <br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
@@ -58,6 +66,7 @@ export default () => {
                     <strong>Send Me an Email!</strong>
                   </a>
                 </span>
+                <br /><br />
               </div>
             </div>
           </div>

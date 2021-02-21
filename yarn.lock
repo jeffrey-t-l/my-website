@@ -5347,7 +5347,7 @@ gatsby-telemetry@^1.10.0:
 
 gatsby-transformer-json@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.npmjs.org/gatsby-transformer-json/-/gatsby-transformer-json-2.11.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-2.11.0.tgz#a97603c76db256b890eb1e20922aa4d436b8357e"
   integrity sha512-3619clIflEMl4OSo/Y9/6Uz+JrpSKKE9WI6i+ciCC7l7ER0lbsPNUBGxf1lXH1xgs5881+QiL8vNeiiwTYetIw==
   dependencies:
     "@babel/runtime" "^7.12.5"
