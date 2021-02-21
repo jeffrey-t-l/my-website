@@ -15,8 +15,10 @@ export default () => {
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 Some placeholder text here. Yada yada. Will update later.
               </p>
-              <br />
-              <br />
+              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
+                The weather in Astoria, NY is currently: 
+              </p>
+              <br /><br /><br /><br /><br /><br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
@@ -37,7 +39,7 @@ export default () => {
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
             src={heroImage}
             alt="Pt. Reyes National Seashore"
-          />
+          ></img>
         </div>
 
         {/*
