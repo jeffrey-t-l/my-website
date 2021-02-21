@@ -28,5 +28,14 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    {
+      resolve: 'gatsby-source-darksky',
+      options: {
+        key: '5af608f4cfa63a9469c42f08c22efed7',
+        latitude: '37.8267',
+        longitude: '122.4233',
+        exclude: [`minutely`, `hourly`, `flags`]
+      },
+    },
   ],
 }

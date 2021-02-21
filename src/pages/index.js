@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
-import ghImage from "/static/gh.png"
 
 export default () => {
   return (
@@ -16,6 +15,7 @@ export default () => {
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 Some placeholder text here. Yada yada. Will update later.
               </p>
+              <br />
               <br />
               <div className="mx-auto">
                 <span className="sm:px-4">
