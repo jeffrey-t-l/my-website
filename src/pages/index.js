@@ -47,11 +47,13 @@ export default () => {
                 </code>
               </div>
               <br /><br />
+              {/*
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Testing Raw Data:
                   <pre>{DarkskyWeather}</pre>
                 </code>
               </div>
+              */}
               <br /><br />
               <div className="mx-auto">
                 <span className="sm:px-4">
