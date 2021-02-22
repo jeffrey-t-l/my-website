@@ -16,8 +16,8 @@ const Darksky = () => (
         }
       }
     `}
-    render={data => <pre>{JSON.stringify(data, null, 4)}</pre>}
+    render={data => <pre>{JSON.stringify(data.weatherData.currently.summary, null, 4)}</pre>}
   ></StaticQuery>
 )
-
+console.log(Darksky)
 export default Darksky

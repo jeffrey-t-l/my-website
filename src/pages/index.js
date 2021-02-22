@@ -4,8 +4,10 @@ import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
 import { StaticQuery, graphql } from "gatsby"
 import Darksky from "../components/Darksky"
+import DarkskyQuery from "../components/DarkskyQuery"
 
 const DarkskyWeather = Darksky()
+const DarkskyQueryWeather = DarkskyQuery()
 
 export default () => {
   return (
@@ -42,13 +44,13 @@ export default () => {
               <br /><br />
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Raw Data:
-                  {DarkskyWeather}
+                  <pre>{DarkskyWeather}</pre>
                 </code>
               </div>
               <br /><br />
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Testing Raw Data:
-                  <pre>{DarkskyWeather}</pre>
+                  <pre>{DarkskyQueryWeather}</pre>
                 </code>
               </div>
               <br /><br />
