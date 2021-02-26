@@ -61,6 +61,7 @@ export default () => {
               </div>
               */}
               <br /><br />
+              {/*}
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
@@ -81,8 +82,9 @@ export default () => {
                     <strong>Send Me an Email!</strong>
                   </a>
                 </span>
-                <br /><br />
+                <br /><br /><br /><br />
               </div>
+              */}
             </div>
           </div>
           <img
