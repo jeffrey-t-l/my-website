@@ -64,20 +64,20 @@ export default () => {
               <div className="mx-auto">
                 <span className="sm:px-4">
                   <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-teal-400">
+                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
                     <strong>Check Out My GitHub</strong>
                     </a>
                 </span>
                 <span className="sm:px-6">
                   <a href="https://www.linkedin.com/in/jeffleibensperger/" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-teal-400">
+                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
                     <strong>Stalk Me on LinkedIn</strong>
                   </a>
                 </span>
                 <br /><br /><br /><br />
                 <span className="sm:px-4">
                   <a href="mailto:" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-teal-400">
+                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
                     <strong>Send Me an Email!</strong>
                   </a>
                 </span>
