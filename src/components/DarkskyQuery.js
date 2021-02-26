@@ -17,7 +17,7 @@ const DarkskyQuery = () => (
         }
       }
     `}
-    render={data => <pre>{JSON.stringify(data, null, 4)}</pre>}
+    render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
   ></StaticQuery>
 )
 
