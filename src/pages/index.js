@@ -39,7 +39,8 @@ export default () => {
     `}render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
   ></StaticQuery>}&deg; F.</p></span>
               <br />
-                <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{}</p>
+              {/*
+              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{}</p>
               <br /><br />
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Raw Data:
@@ -47,7 +48,6 @@ export default () => {
                 </code>
               </div>
               <br /><br />
-              {/*
               <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
                 <code className="text-gray-600 text-xs leading-xl">Testing Raw Data:
                   <pre>{DarkskyWeather}</pre>

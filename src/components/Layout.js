@@ -26,9 +26,11 @@ const Layout = ({ children }) => {
               <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
               <Link to="/aboutme">About Me</Link>
               </a>
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white">
+              {/*
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
               <Link to="/blog">Blog</Link>
               </a>
+              */}
             </div>
           </div>
         </nav>
