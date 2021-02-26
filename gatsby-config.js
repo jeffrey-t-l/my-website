@@ -5,7 +5,7 @@ const { theme } = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: "@jeffl",
+    title: "jeffl",
     author: "Jeff Leibensperger",
     description: "Hello!",
   },
