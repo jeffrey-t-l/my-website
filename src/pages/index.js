@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
-import { StaticQuery, graphql } from "gatsby"
-import Darksky from "../components/Darksky"
+//import { StaticQuery, graphql } from "gatsby"
+//import Darksky from "../components/Darksky"
 import DarkskyQuery from "../components/DarkskyQuery"
 
-const DarkskyWeather = Darksky()
+//const DarkskyWeather = Darksky()
 const DarkskyWeatherQuery = DarkskyQuery()
 
 export default () => {
