@@ -53,15 +53,15 @@ const Layout = ({ children }) => {
           </div>
         </nav>
         {children}
-        {/*<footer className="p-16 bg-black text-gray-600 text-xs text-right align-bottom">
+        <footer className="p-16 bg-black text-gray-600 text-xs text-right align-bottom">
           <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css" target="_blank" rel="noreferrer">Melanie Nolan</a> | Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a> | Weather from <a href="https://darksky.net"  target="_blank" rel="noreferrer" title="Darsky">Darksky</a></div>
-        </footer>*/}
-        <footer class="w-full border-t border-black p-8 pin-b bg-black text-gray-600">
+        </footer>
+        {/*<footer class="w-full border-t border-black p-8 pin-b bg-black text-gray-600">
           <div class="h-48 flex flex-wrap content-center">
             <div>1</div>
             <div class="text-xs text-right text-bottom">Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css" target="_blank" rel="noreferrer">Melanie Nolan</a> | Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a> | Weather from <a href="https://darksky.net"  target="_blank" rel="noreferrer" title="Darsky">Darksky</a></div>
           </div>
-        </footer>
+        </footer>*/}
       </div>
     </>
   )
