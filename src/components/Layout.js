@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
         */}
         <nav class="flex items-center justify-between flex-wrap p-6 bg-black text-white font-semibold">
           <div class="flex items-center flex-no-shrink text-white mr-6">
-            <svg class="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+            {/*<svg class="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>*/}
             <Link to="/"><span class="font-semibold text-xl tracking-tight">Jeff Leibensperger</span></Link>
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -28,12 +28,16 @@ const Layout = ({ children }) => {
               <Link to="/">Home</Link>
               </a>
               */}
-              <span class="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
-                <Link to="/aboutme">About Me</Link>
-              </span>
-              <span class="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
-                <Link to="/blog">Blog</Link>
-              </span>
+              <Link to="/aboutme">
+                <span class="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
+                  About Me
+                </span>
+              </Link>
+              <Link to="/blog">
+                <span class="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
+                  Blog
+                </span>
+              </Link>
             </div>
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
@@ -52,9 +56,15 @@ const Layout = ({ children }) => {
           </div>
         </nav>
         {children}
-        <footer className="p-5 bg-black text-gray-600 text-xs text-right align-bottom">
-          <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css">Melanie Nolan</a> | Icons by <a href="https://www.freepik.com" title="Freepik">Freepik</a> | Weather from <a href="https://darksky.net" title="Darsky">Darksky</a></div>
+        <footer className="p-16 bg-black text-gray-600 text-xs text-right align-bottom">
+          <div>Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css" target="_blank" rel="noreferrer">Melanie Nolan</a> | Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a> | Weather from <a href="https://darksky.net"  target="_blank" rel="noreferrer" title="Darsky">Darksky</a></div>
         </footer>
+        {/*<footer class="w-full border-t border-black p-8 pin-b bg-black text-gray-600">
+          <div class="h-48 flex flex-wrap content-center">
+            <div>1</div>
+            <div class="text-xs text-right text-bottom">Template by <a href="https://github.com/melanienolan/gatsby-starter-tailwind-css" target="_blank" rel="noreferrer">Melanie Nolan</a> | Icons by <a href="https://www.freepik.com"  target="_blank" rel="noreferrer" title="Freepik">Freepik</a> | Weather from <a href="https://darksky.net"  target="_blank" rel="noreferrer" title="Darsky">Darksky</a></div>
+          </div>
+        </footer>*/}
       </div>
     </>
   )
