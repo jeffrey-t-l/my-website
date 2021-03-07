@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-export default () => {
+const AboutMe = ({ children }) => {
     return (
       <Layout>
         <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
@@ -10,3 +10,5 @@ export default () => {
     </Layout>
     )
 }
+
+export default AboutMe

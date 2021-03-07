@@ -8,8 +8,7 @@ import DarkskyQuery from "../components/DarkskyQuery"
 
 //const DarkskyWeather = Darksky()
 const DarkskyWeatherQuery = DarkskyQuery()
-
-export default () => {
+const Index = () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
@@ -106,3 +105,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Index;
