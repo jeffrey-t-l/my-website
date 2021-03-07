@@ -8,6 +8,7 @@ import DarkskyQuery from "../components/DarkskyQuery"
 
 //const DarkskyWeather = Darksky()
 const DarkskyWeatherQuery = DarkskyQuery()
+
 const Index = () => {
   return (
     <Layout>
@@ -24,66 +25,7 @@ const Index = () => {
               <span>
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 The current temperature in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {DarkskyWeatherQuery} &deg; F.</p></span>
-              {/*
-              <span>
-              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-                The current temperature in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {<StaticQuery
-    query={graphql`
-      {
-        weatherData {
-          id
-          latitude
-          longitude
-          currently {
-            temperature
-            summary
-          }
-        }
-      }
-    `}render={data => <pre>{JSON.stringify(data.weatherData.currently.temperature, null, 4)}</pre>}
-  ></StaticQuery>}&deg; F.</p></span>
-    */}
-              <br />
-              {/*
-              <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">Data:{}</p>
               <br /><br />
-              <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
-                <code className="text-gray-600 text-xs leading-xl">Raw Data:
-                  <pre>{DarkskyWeather}</pre>
-                </code>
-              </div>
-              <br /><br />
-              <div className="flex items-center p-3 mx-2 bg-white rounded shadow-xs sm:mx-auto">
-                <code className="text-gray-600 text-xs leading-xl">Testing Raw Data:
-                  <pre>{DarkskyWeather}</pre>
-                </code>
-              </div>
-              */}
-              <br /><br />
-              {/*}
-              <div className="mx-auto">
-                <span className="sm:px-4">
-                  <a href="https://github.com/jeffrey-t-l" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
-                    <strong>Check Out My GitHub</strong>
-                    </a>
-                </span>
-                <span className="sm:px-6">
-                  <a href="https://www.linkedin.com/in/jeffleibensperger/" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
-                    <strong>Stalk Me on LinkedIn</strong>
-                  </a>
-                </span>
-                <br /><br /><br /><br />
-                <span className="sm:px-4">
-                  <a href="mailto:" target="_blank" rel="noreferrer"
-                    className="p-4 bg-black text-white text-xs rounded shadow hover:bg-gray-700">
-                    <strong>Send Me an Email!</strong>
-                  </a>
-                </span>
-                <br /><br /><br /><br />
-              </div>
-              */}
             </div>
           </div>
           <img
