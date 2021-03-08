@@ -22,6 +22,11 @@ const Layout = ({ children }) => {
                   Good Reads
                 </span>
               </Link>
+              <Link to="/resume">
+                <span class="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
+                  Work Experience
+                </span>
+              </Link>
             </div>
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
