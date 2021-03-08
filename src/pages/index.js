@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
-//import DarkskyQuery from "../components/DarkskyQuery"
+import DarkskyQuery from "../components/DarkskyQuery"
 
-//const DarkskyWeatherQuery = DarkskyQuery()
+const DarkskyWeatherQuery = DarkskyQuery()
 
 const Index = () => {
   return (
@@ -16,15 +16,13 @@ const Index = () => {
               <h1 className="px-4 pt-5 text-2xl text-left text-black-500 font-bold sm:text-3xl">
                 Hi There! <Emoji symbol="👋" label="wave"/>
               </h1>
+ {/*
               <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
                 I am Jeff. I currently reside in <a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY.</a>
               </p>
-              {/*}
-              <span>
-                <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">The current temperature in <strong><a href="https://goo.gl/maps/eVYSz1HcDd2iFE2E7" target="_blank" rel="noreferrer">Astoria, NY</a></strong> is currently {DarkskyWeatherQuery} &deg; F.</p>
-              </span>
-              */}
-              <br /><br />
+  */}
+              <br />
+              <br />
             </div>
           </div>
           <img
