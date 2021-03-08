@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ["./src/**/*.js"],
+  future: {
+    purgeLayersByDefault: true,
+  },
+  purge: {
+    layers: ['utilities'],
+    content: [
+
+    ],
+  },
   target: "relaxed",
   theme: {
     extend: {},
