@@ -23,6 +23,7 @@ const Books = ({ children }) => {
                 <div class="grid grid-rows-1 md:grid-rows-1 ...">
                     <p className="px-2 mt-8 text-lg text-gray-700 sm:mt-8"><strong>Books I'd like to read next</strong></p>
                     <div className="px-6 mt-8 text-sm text-gray-700">A World Without Email; Cal Newport</div>
+                    <div className="px-6 mt-8 text-sm text-gray-700">Infinite Jest; David Foster Wallace</div>
                 </div>
             </div>
         </main>
