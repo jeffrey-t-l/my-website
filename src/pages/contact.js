@@ -34,9 +34,10 @@ const Contact = () => {
           handleServerResponse(false, r.response.data.error, form);
         });
     };
-    
+
     return (
         <Layout>
+            <div>
             <div className="col-md-8 mt-5 max-w-4xl flex-grow mx-auto flex flex-col justify-around">
                 <h1>Send Me a Message</h1>
                 <br />
@@ -48,9 +49,14 @@ const Contact = () => {
                 <br />
                 <div className="form-group w-full block flex-grow lg:flex">
                     <label for="exampleInputName">Name:&nbsp;&nbsp;</label>
-                    <input type="textarea" name="name" className="form-control" id="exampleInputName" placeholder="Name" required="required"/>
+                    <input type="text" name="name" className="form-control" id="exampleInputName" placeholder="Name" required="required"/>
                 </div>
                 <br />
+                <div className="form-group w-full block flex-grow lg:flex">
+                    <label for="msg">Message:&nbsp;&nbsp;</label>
+                    <textarea id="msg" rows="5" cols="20"></textarea>
+                    {/*<input type="text" name="name" className="form-control" id="msg" placeholder="Name" required="required"/>*/}
+                </div>
     {/*}
                     <div className="form-group w-full block flex-grow lg:flex">
                         <label for="exampleFormControlSelect1">How did you get here?</label>
@@ -75,6 +81,7 @@ const Contact = () => {
                     </p>
                 )}
                 </form>
+            </div>
             </div>
         </Layout>
     );
