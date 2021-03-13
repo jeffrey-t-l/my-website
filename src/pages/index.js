@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import Emoji from "../components/Emoji"
 import heroImage from "../images/ws-me-point-reyes-2017.jpg"
-import DarkskyQuery from "../components/DarkskyQuery"
+//import DarkskyQuery from "../components/DarkskyQuery"
 
-const DarkskyWeatherQuery = DarkskyQuery()
+//const DarkskyWeatherQuery = DarkskyQuery()
 
 const Index = () => {
   return (
