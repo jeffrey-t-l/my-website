@@ -1,9 +1,6 @@
 import React from "react"
 import SEO from "./SEO"
 import { Link } from "gatsby"
-//import DarkskyQuery from "../components/DarkskyQuery"
-
-//const DarkskyWeatherQuery = DarkskyQuery()
 
 const Layout = ({ children }) => {
   return (

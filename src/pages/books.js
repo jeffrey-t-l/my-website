@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-const Books = ({ children }) => {
+const Books = () => {
     return (
       <Layout>
         <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
