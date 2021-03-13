@@ -24,13 +24,6 @@ const Layout = ({ children }) => {
                   Work Experience
                 </span>
               </Link>
-              {/*}
-              <Link to="/contact">
-                <span className="p-4 bg-black text-white text-s rounded shadow hover:bg-gray-700">
-                  Contact
-                </span>
-              </Link>
-  */}
             </div>
           </div>
           <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
