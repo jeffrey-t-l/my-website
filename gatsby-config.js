@@ -15,12 +15,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Tailwind CSS",
-        short_name: "Gatsby Starter Tailwind CSS",
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
         start_url: "/",
         background_color: theme.colors.white,
         theme_color: theme.colors.teal[500],
         icon: "static/fish.svg",
+        display: "standalone",
       },
     },
     {
